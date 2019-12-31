@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Education from './education';
+import Experience from './experience';
 import Skills from './skills';
 
 class Resume extends Component {
@@ -30,11 +32,68 @@ class Resume extends Component {
                     </Cell>
 
                     <Cell className="resume-right-col" col={8}>
-                        <h2>Skills</h2>
-                        <Skills
+                        <h2>Education</h2>
+                        <Education
                             startYear={2012}
+                            endYear={2013}
+                            schoolName="my University"
+                            schoolDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" />
+
+                        <Education
+                            startYear={2013}
+                            endYear={2014}
+                            schoolName="my second University"
+                            schoolDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" />
+                        <hr style={{borderTop: '3px solid #e22947'}} />
+
+                        <h2>Experience</h2>
+                            
+                        <Experience
+                            startYear={2009}
+                            endYear={2010} 
+                            jobName="First job"
+                            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                            />
+
+                        <Experience
+                            startYear={2010}
+                            endYear={2011} 
+                            jobName="Second job"
+                            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                            />
+                        <hr style={{borderTop: '3px solid #e22947'}} />
+
+                        <h2>Skills</h2>
+
+                        <Skills
+                            skills="javaScript"
+                            progress={80}
+                            />
+                        <Skills
+                            skills="HTML/CSS"
+                            progress={100}
                              />
-                    </Cell>
+                        <Skills
+                            skills="React"
+                            progress={85}
+                             />
+                        <Skills
+                            skills="Node"
+                            progress={90}
+                             />
+                        <Skills
+                            skills="MongoDB"
+                            progress={25}
+                             />
+                        <Skills
+                            skills="Express"
+                            progress={30}
+                             />
+
+
+
+                        </Cell>
+
                     
                 </Grid>
             </div>
