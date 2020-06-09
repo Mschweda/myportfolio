@@ -3,18 +3,21 @@
 background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
 }
 
-.landing-grid {
+.landing-grid, html {
     background: #de6161;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;;
+    height: 100%;
+   
+    
 }
 
 .projects-grid {
@@ -35,7 +38,7 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
 /* contact page CSS */
 .contact-body {
     margin: auto;
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -132,5 +135,19 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
     padding-bottom: .25em;
 }
 
+@media(max-width: 576px) {
+.projects-grid, contact-list {
+    width: 100%;
+    display: inline-block;
+    }
+}
 
-
+ span {
+    margin: auto;
+}
+/* .mdl-layout__drawer is-visible {
+    color: aqua;
+} */
+.mdl-navigation {
+    margin: auto;
+}

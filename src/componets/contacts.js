@@ -7,15 +7,16 @@ class Contact extends Component {
         return(
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    <Cell col={6}>
+                    <Cell col={5}>
                         <h2>MARISA SCHWEDA</h2>
                         <img
-                            src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png" alt="avatar"
-                            style= {{height: '250px'}}
-                             />
-                            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.</p>     
+                            src="/myAvatar.png" alt="avatar"
+                                style={{height: '300px'}}
+                                />
+                             
+                            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>I’m currently available for freelance work. I love to connect with clients and hear their ideas. Drop me a line!  </p>     
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={5}>
                         <h2>CONTACT ME</h2>
                         <hr/>
                         <div className="contact-list">
@@ -23,22 +24,15 @@ class Contact extends Component {
 
                                 <ListItem>
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                    <i className="fa fa-phone-square" aria-hidden="true"/>  
+                                    {/* <i className="fa fa-phone-square" aria-hidden="true"/>   */}
                                     (970) 819-2869
                                     </ListItemContent>
                                 </ListItem>
 
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                    <i className="fa fa-fax" aria-hidden="true"/>  
-                                    (970) 819-2869
-                                    </ListItemContent>
-                                </ListItem>
-
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                    <i className="fa fa-envelope" aria-hidden="true"/>  
-                                    tahoe27@gmail.com
+                               <ListItem>
+                                    <ListItemContent style={{fontSize: '20px', fontFamily: 'Anton'}}>
+                                    {/* <i className="fa fa-envelope" aria-hidden="true"/>   */}
+                                    marisaschweda@gmail.com
                                     </ListItemContent>
                                 </ListItem>
                                

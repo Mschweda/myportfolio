@@ -10,74 +10,84 @@ class Projects extends Component {
 
     toggleCatergories() { 
 
-        if(this.state.activeTab === 0){
-            return(
-                <div className="projects-grid">
-                {/*===Project=== 1*/}
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React project #1</CardTitle>
-                            <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                    </Card>
-
-                    {/*===Project=== 2*/}
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React project #2</CardTitle>
-                            <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                    </Card>
-
-                    {/*===Project=== 3*/}
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React project #3</CardTitle>
-                            <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                    </Card>
-                </div>
-            )
-        } else if(this.state.activeTab === 1) {
-            return (
-                <div><h1>This is HTML/CSS</h1></div>
-            )
-        } else if(this.state.activeTab === 2) {
-            return (
-            <div><h1>This is BOOTSTRAP</h1></div>
-            )
-        } else if(this.state.activeTab === 3) {
-            return (
-            <div><h1>This is WORDPRESS</h1></div>
-            )
-        }
+    
+    if(this.state.activeTab === 0){
+        return(
+          <div className="projects-grid">
+            {/* Project 1 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto', color: '#fff'}}>
+              <CardTitle style={{color: '#fff', height: '230px', background: 'url(chat_app.png) center / cover'}} ></CardTitle>
+              <CardText>
+                {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's */}
+              </CardText>
+              <CardActions border>
+                <Button colored>GitHub</Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{color: '#fff'}}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+  
+            {/* Project 2 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+              <CardTitle style={{color: '#fff', height: '230px', background: 'url(/biz_card.png) center / cover'}} ></CardTitle>
+              <CardText>
+                {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's */}
+              </CardText>
+              <CardActions border>
+                <Button colored>GitHub</Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{color: '#fff'}}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+  
+            {/* Project 3 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+              <CardTitle style={{color: '#fff', height: '230px', background: 'url(weather_app.png) center / cover'}} ></CardTitle>
+              <CardText>
+                {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's */}
+              </CardText>
+              <CardActions border>
+                <Button colored>GitHub</Button>
+                <Button colored>CodePen</Button>
+                <Button colored>Live Demo</Button>
+              </CardActions>
+              <CardMenu style={{color: '#fff'}}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </div>
+  
+  
+        )
+      } else if(this.state.activeTab === 1) {
+        return (
+          <div><h1>This is Angular</h1></div>
+        )
+      } else if(this.state.activeTab === 2) {
+        return (
+          <div><h1>This is VueJS</h1></div>
+        )
+      } else if(this.state.activeTab === 3) {
+        return (
+          <div><h1>This is MongoDB</h1></div>
+        )
+      }
+  
     }
-
+  
     render() {
         return(
             <div className="catagory-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple> 
-                    <Tab>React</Tab>
+                    <Tab>SWIFT</Tab>
                     <Tab>HTML/CSS</Tab>
-                    <Tab>BOOTSTRAP</Tab>
+                    <Tab>REACT</Tab>
                     <Tab>WORDPRESS</Tab>
                 </Tabs>
 
@@ -91,6 +101,7 @@ class Projects extends Component {
             
         )
     }
-}
+} 
+
 
 export default Projects;
