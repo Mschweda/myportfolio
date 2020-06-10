@@ -56,20 +56,20 @@ I now specialise in front-end development but my knowledge of multiple fields al
                             startYear={2019}
                             endYear="Present" 
                             jobName="Siteshark"
-                            jobDescription="Started my own freelance company developing custom websites and applications. Worked on various logo and UI designs. Helped small buinsesses with marketing, online ordering, daily website assistance and updates during Covid-19."
+                            jobDescription="I started my own freelance company developing dynamic, responsive websites and applications. This includes working on several logos and custom UI designs. In recent months I helped small businesses with website maintenance, providing daily updates, marketing, and implementing online ordering applications. "
                             />
 
                         <Experience
                             startYear={2019}
                             endYear={2019} 
                             jobName="Austin Coding Academy"
-                            jobDescription="Attended ACA's fullstack web program. Learned how to build fullstack web apllications using the MERN stack. Became proficent is JavaScript, HTML, CSS, React, Express, MongoDB, Jquery, Boostrap, Git, Github and Node JS."
+                            jobDescription="18-week full-stack web developer program building full-stack web applications, websites, games and mobile applications. Notable skills acquired are JavaScript, HTML5, CSS3, React, Express, MongoDB, Jquery, Boostrap, Git, Github, and Node JS."
                             />
                             <Experience
                             startYear={2017}
                             endYear={2019} 
                             jobName="Self-Taught Programmer"
-                            jobDescription="Took several classes on Udemy, Udacity, Freecodecamp and General Assembly. Learned the basics of web development, building websites and applications from scratch. "
+                            jobDescription="Took several classes on Udemy, Udacity, Freecodecamp, and General Assembly. Learned the basics of web development, building websites, and applications from scratch. "
                             />
                         <hr style={{borderTop: '3px solid #e22947'}} />
 
